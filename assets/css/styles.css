@@ -456,7 +456,12 @@ img{
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,.languages__content{
+/* .skills__content,.languages__content{
+    grid-template-columns: repeat(2, 1fr);
+}
+ */
+
+.languages__content{
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -607,3 +612,29 @@ img{
 
 /* Classes modified for large screen size */
 
+#skill {
+  display:inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px !important;
+  color: var(--text-color);
+  background: var(--container-color);
+  padding: 2px;
+  border-radius: 4px;
+  line-height: 35px;
+}
+#skill:hover {
+    background: var(--container-color);
+}
+#skill-stronger {
+  display:inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px !important;
+  color: var(--text-color);
+  background: var(--container-color);
+  padding: 3px;
+  border-radius: 5px;
+  line-height: 35px;
+}
+#skill-stronger:hover {
+  background : var(--container-color)
+}
