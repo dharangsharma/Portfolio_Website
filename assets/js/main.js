@@ -127,3 +127,26 @@ resumeButton.addEventListener('click',()=>{
     setTimeout(removeScale, 5000)
 })
 
+/*==================== ADDING Counter ====================*/ 
+
+
+
+/* const getData = () => {
+    axios.get('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod').then(response =>{
+        console.log(response);
+    })
+}; */
+
+/* fetch('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod')
+    .then(res => res.json())
+    .then(data => console.log(data))
+
+    document.getElementById("counter-id").innerHTML = data;
+*/
+
+fetch('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod')
+    .then(res => res.json())
+    .then((data)=>{
+        document.getElementById("counter-id").innerHTML = data;
+    })
+
