@@ -144,9 +144,9 @@ resumeButton.addEventListener('click',()=>{
     document.getElementById("counter-id").innerHTML = data;
 */
 
-fetch('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod')
+/* fetch('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod')
     .then(res => res.json())
     .then((data)=>{
         document.getElementById("counter-id").innerHTML = data;
-    })
+    }) */
 

@@ -9,8 +9,6 @@
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!--========== AXIOS ==========-->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>Dharang Sharma</title>
 </head>
@@ -358,6 +356,14 @@
             </div>
         </div>        
     </main>
+
+    <script>
+        fetch('https://bkwag13inj.execute-api.ap-south-1.amazonaws.com/prod')
+    .then(res => res.json())
+    .then((data)=>{
+        document.getElementById("counter-id").innerHTML = data;
+    })
+    </script>
     
     <!--========== SCROLL TOP ==========-->
     <a href="" class="scrolltop" id="scroll-top">
