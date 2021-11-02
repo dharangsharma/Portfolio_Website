@@ -614,8 +614,10 @@ img{
 
 #skill {
   display:inline;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px !important;
+  /* font-family: "Courier New", Courier, monospace;
+  font-size: 14px !important; */
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
   color: var(--text-color);
   background: var(--container-color);
   padding: 2px;
@@ -627,8 +629,10 @@ img{
 }
 #skill-stronger {
   display:inline;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px !important;
+  /* font-family: "Courier New", Courier, monospace;
+  font-size: 18px !important; */
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
   color: var(--text-color);
   background: var(--container-color);
   padding: 3px;
